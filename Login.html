@@ -11,6 +11,8 @@
   <title>nextShop</title>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="fontawesome/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
 <link href="css/shop-homepage.css" rel="stylesheet">
 
 </head>
@@ -19,15 +21,15 @@
 
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="#"><img class=""src="img/logo-nextShop.svg"  width="150" alt="nextShop"></a>
+    <a class="navbar-brand" href="Index.html"><img class=""src="img/logo-nextShop.svg"  width="150" alt="nextShop"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="Index.html">Inicio <span class="sr-only">(current)</span></a>
         </li>
 
         <li class="nav-item dropdown">
@@ -59,14 +61,23 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
       </form>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="Carrito.html">Carrito</a>
+          <a class="nav-link" href="Carrito.html"><i class="fas fa-shopping-cart"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Login.html">Login</a>
+          <a class="nav-link" href="Login.html"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fab fa-twitter-square"></i></a>
         </li>
       </ul>
 
@@ -74,22 +85,39 @@
   </nav>
 
 
-  <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">E-mail</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+<div class="container centrado">
+  <div class="row">
+    <div class="col-md-4 align-items-center">
+      <form class=""action="index.php" method="post">
+        <div class="form-group">
+          <label for="usu">E-mail:</label>
+          <input class="form-control" id="usu" type="email" placeholder="Ingrese su E-mail..." required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="pass">Contraseña:</label>
+          <input class="form-control" id="pass" type="password" placeholder="Ingrese su contraseña..." required="true">
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+        </div>
+
+        <br>
+
+        <input type="submit" class="btn btn-outline-secondary my-2 my-sm-0" value="Ingresar">
+      </form>
+
+      <br>
+
+      <div class="msg" id="msg">
+
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Contraseña</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Entrar</button>
-</form>
+</div>
 
 
 
@@ -100,6 +128,11 @@
       <ul class="text-center text-white navbar-nav mr-auto">
         <li> <a class="m-0 text-center text-white" href="FAQ.html">Preguntas Frecuentes</a></li>
         <li><a class="m-0 text-center text-white" href="Contacto.html">Contacto</a></li>
+        <li class="nav-item">
+          <a href="#" class="m-0 text-center text-white"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" class="m-0 text-center text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="m-0 text-center text-white"><i class="fab fa-twitter-square"></i></a>
+        </li>
         <li><p class="m-0">Copyright &copy; nextShop S.R.L. 2019</p></li>
       </ul>
 
