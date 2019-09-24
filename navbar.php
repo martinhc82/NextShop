@@ -45,7 +45,7 @@
 
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="FAQ.html">Centro de Ayuda</a>
+        <a class="nav-link" href="faq.php">Centro de Ayuda</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Sucursales</a>
