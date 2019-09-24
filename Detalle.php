@@ -19,92 +19,24 @@
 
 <body>
 
-  <!-- Barra de Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="Index.html"><img class=""src="img/logo-nextShop.svg"  width="150" alt="nextShop"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="Index.html">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Productos
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Microprocesadores</a>
-            <a class="dropdown-item" href="#">Motherboards</a>
-            <a class="dropdown-item" href="#">Memorias RAM</a>
-            <a class="dropdown-item" href="#">Almacenamiento</a>
-            <a class="dropdown-item" href="#">Gabinetes</a>
-            <a class="dropdown-item" href="#">Fuentes</a>
-            <a class="dropdown-item" href="#">Refrigeración</a>
-            <a class="dropdown-item" href="#">Placas de Video</a>
-            <a class="dropdown-item" href="#">Perifericos</a>
-            <a class="dropdown-item" href="#">Monitores</a>
-            <a class="dropdown-item" href="#">Audio</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">CPUs Armadas</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="FAQ.html">Preguntas Frecuentes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Sucursales</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="Carrito.html"><i class="fas fa-shopping-cart"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Login.html"><i class="fas fa-user"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"><i class="fab fa-facebook-square"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"><i class="fab fa-twitter-square"></i></a>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
-
   <div class="container bg-light ">
+    <!-- Barra de Navegación -->
+
+      <?php
+      require_once("navbar.php");
+       ?>
 
     <div class="row">
 
       <div class="col-lg-3">
 
         <h1 class="my-4">Descubrí</h1>
-        <div class="list-group">
-          <a class="list-group-item " href="#">Microprocesadores</a>
-          <a class="list-group-item" href="#">Motherboards</a>
-          <a class="list-group-item" href="#">Memorias RAM</a>
-          <a class="list-group-item" href="#">Almacenamiento</a>
-          <a class="list-group-item" href="#">Gabinetes</a>
-          <a class="list-group-item" href="#">Fuentes</a>
-          <a class="list-group-item" href="#">Refrigeración</a>
-          <a class="list-group-item" href="#">Placas de Video</a>
-          <a class="list-group-item" href="#">Perifericos</a>
-          <a class="list-group-item" href="#">Monitores</a>
-          <a class="list-group-item" href="#">Audio</a>
+        <!-- Barra de Navegación Izquierda-->
 
-        </div>
+          <?php
+          require_once("navbarIzq.php");
+           ?>
+
 
       </div>
 

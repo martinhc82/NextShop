@@ -3,4 +3,30 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: 'Roboto', sans-serif !important;
+  background-color: #F8F9FA;
   }
+
+
+.container {
+
+}
+  /* unvisited link */
+ a:link {
+   color: #000000;
+ }
+
+ /* visited link */
+ a:visited {
+   color: #34495e;
+ }
+
+ /* mouse over link */
+ a:hover {
+   color: #ec0c0c;
+   text-decoration: none;
+ }
+
+ /* selected link */
+ a:active {
+     color: #CCCCCC;
+ }

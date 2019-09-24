@@ -69,7 +69,7 @@
               <a href="#"><img class="card-img-top" src="img/artA-artHome-700x400.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Item One</a>
+                  <a href="detalle.php">Item One</a>
                 </h4>
                 <h5>$24.99</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -85,7 +85,7 @@
               <a href="#"><img class="card-img-top" src="img/artB-artHome-700x400.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Item Two</a>
+                  <a href="detalle.php">Item Two</a>
                 </h4>
                 <h5>$24.99</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
@@ -101,7 +101,7 @@
               <a href="#"><img class="card-img-top" src="img/artC-artHome-700x400.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Item Three</a>
+                  <a href="detalle.php">Item Three</a>
                 </h4>
                 <h5>$24.99</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -117,7 +117,7 @@
               <a href="#"><img class="card-img-top" src="img/artD-artHome-700x400.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Item Four</a>
+                  <a href="detalle.php">Item Four</a>
                 </h4>
                 <h5>$24.99</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -133,7 +133,7 @@
               <a href="#"><img class="card-img-top" src="img/artE-artHome-700x400.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Item Five</a>
+                  <a href="detalle.php">Item Five</a>
                 </h4>
                 <h5>$24.99</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
@@ -149,7 +149,7 @@
               <a href="#"><img class="card-img-top" src="img/artF-artHome-700x400.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Item Six</a>
+                  <a href="detalle.php">Item Six</a>
                 </h4>
                 <h5>$24.99</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>

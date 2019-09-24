@@ -5,7 +5,6 @@
   require_once("modalFormRegister.php")
    ?>
 
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <a class="navbar-brand" href="Index.php"><img class=""src="img/logo-nextShop.svg"  width="150" alt="nextShop"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,18 +37,19 @@
           <a class="dropdown-item" href="#">CPUs Armadas</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="FAQ.html">Preguntas Frecuentes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Sucursales</a>
-      </li>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
+
     <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="FAQ.html">Centro de Ayuda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sucursales</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="Carrito.html"><i class="fas fa-shopping-cart"></i></a>
       </li>
