@@ -3,14 +3,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Ingresa</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Ingresa | ¿No tenés una cuenta? <a class="nav-link" data-toggle="modal" data-target="#formRegister">Registrate</h5></a>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
 
-        <!-- Modal Formulario -->
+        <!-- Modal Formulario Login-->
         <form class=""action="index.php" method="post">
           <div class="form-group">
             <label for="usu">E-mail:</label>

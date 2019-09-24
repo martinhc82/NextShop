@@ -1,7 +1,8 @@
-<!-- Modal -->
+<!-- Modal Form Login-->
 
   <?php
-  require_once("modalForm.php");
+  require_once("modalFormLogin.php");
+  require_once("modalFormRegister.php")
    ?>
 
 
@@ -14,7 +15,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="Index.html">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
 
       <li class="nav-item dropdown">
