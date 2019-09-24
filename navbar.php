@@ -1,5 +1,12 @@
+<!-- Modal -->
+
+  <?php
+  require_once("modalForm.php");
+   ?>
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <a class="navbar-brand" href="Index.html"><img class=""src="img/logo-nextShop.svg"  width="150" alt="nextShop"></a>
+  <a class="navbar-brand" href="Index.php"><img class=""src="img/logo-nextShop.svg"  width="150" alt="nextShop"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -61,45 +68,3 @@
 
   </div>
 </nav>
-
-<!-- Modal -->
-<div class="modal fade" id="formLoginPrueba" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Ingresa</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-        <!-- Modal Formulario -->
-        <form class=""action="index.php" method="post">
-          <div class="form-group">
-            <label for="usu">E-mail:</label>
-            <input class="form-control" id="usu" type="email" placeholder="Ingrese su E-mail..." required="true">
-          </div>
-
-          <div class="form-group">
-            <label for="pass">Contraseña:</label>
-            <input class="form-control" id="pass" type="password" placeholder="Ingrese su contraseña..." required="true">
-          </div>
-
-
-
-      </div>
-      <div class="modal-footer">
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Recordarme</label>
-        </div>
-
-        <br>
-
-        <input type="submit" class="btn btn-outline-secondary my-2 my-sm-0" value="Ingresar">
-      </form>
-      </div>
-    </div>
-  </div>
-</div>

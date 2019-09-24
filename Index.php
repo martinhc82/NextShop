@@ -19,15 +19,14 @@
 
 <body>
 
-  <!-- Barra de Navegación -->
-
-    <?php
-    require_once("navbar.php");
-     ?>
-
-
-  <!-- Page Content -->
+  <!-- Contenido -->
   <div class="container">
+
+    <!-- Barra de Navegación -->
+
+      <?php
+      require_once("navbar.php");
+       ?>
 
     <div class="row">
 
