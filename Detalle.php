@@ -29,8 +29,8 @@
   <div class="row">
 
       <div class="col-lg-3">
+        <h4 class="my-4">Notebook Asus X543UA-GQ1546T Intel Core i3</h4>
 
-        <h1 class="my-4">Descubrí</h1>
         <!-- Barra de Navegación Izquierda-->
 
           <?php

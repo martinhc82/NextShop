@@ -1,4 +1,4 @@
-<div class="list-group">
+<div class="list-group navbarIzq">
   <a class="list-group-item " href="#">Microprocesadores</a>
   <a class="list-group-item" href="#">Motherboards</a>
   <a class="list-group-item" href="#">Memorias RAM</a>

@@ -7,8 +7,8 @@ body {
   }
 
 
-.container {
-
+.navbarIzq {
+ margin-top: 24px;
 }
   /* unvisited link */
  a:link {

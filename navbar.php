@@ -34,6 +34,7 @@
           <a class="dropdown-item" href="#">Monitores</a>
           <a class="dropdown-item" href="#">Audio</a>
           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="prod-notebooks.php">Notebooks</a>
           <a class="dropdown-item" href="#">CPUs Armadas</a>
         </div>
       </li>
@@ -51,7 +52,7 @@
         <a class="nav-link" href="#">Sucursales</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Carrito.html"><i class="fas fa-shopping-cart"></i></a>
+        <a class="nav-link" href="carrito.php"><i class="fas fa-shopping-cart"></i></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="modal" data-target="#formLoginPrueba"><i class="fas fa-user"></i></a>
