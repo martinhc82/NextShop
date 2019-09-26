@@ -5,8 +5,8 @@
   require_once("modalFormRegister.php")
    ?>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <a class="navbar-brand" href="Index.php"><img class=""src="img/logo-nextShop.svg"  width="150" alt="nextShop"></a>
+<nav class="navbar navbarLogo navbar-expand-lg navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="index.php"><img class=""src="img/logo-nextShop.svg"  width="175" alt="nextShop"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
