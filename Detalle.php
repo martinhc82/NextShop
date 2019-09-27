@@ -29,13 +29,13 @@
   <div class="row">
 
   <div class="col-lg-3">
-    
+
         <h4 class="my-4">Notebooks</h4>
 
         <!-- Barra de Navegación Izquierda-->
 
         <?php
-          require_once("navbarIzq.php");
+          require_once("navbarIzq-note.php");
         ?>
 
   </div>

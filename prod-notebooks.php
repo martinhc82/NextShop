@@ -37,7 +37,7 @@
         <!-- Barra de Navegación Izquierda-->
 
           <?php
-          require_once("navbarIzq.php");
+          require_once("navbarIzq-note.php");
            ?>
 
 
