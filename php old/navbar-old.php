@@ -51,12 +51,6 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Sucursales</a>
       </li>
-    </ul>
-
-    <!-- Menú íconos -->
-    <div class="row navbarIconosLeft">
-
-    <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="carrito.php"><i class="fas fa-shopping-cart"></i></a>
       </li>
@@ -73,7 +67,6 @@
         <a href="#" class="nav-link"><i class="fab fa-twitter-square"></i></a>
       </li>
     </ul>
-  </div>
 
   </div>
 </nav>
