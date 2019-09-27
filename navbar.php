@@ -43,7 +43,7 @@
         <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </ul>
-
+    
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="faq.php">Centro de Ayuda</a>
