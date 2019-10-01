@@ -40,6 +40,11 @@ body {
   display: inline-flex;
   flex-direction: row;
   justify-content: flex-end;
+  float: left;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+p.modalTile{
+  font-size: 20px;
 }
