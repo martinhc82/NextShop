@@ -43,7 +43,7 @@
   <div class="col-lg-9">
 
     <div class="card mt-4">
-      <img class="card-img-top img-fluid" src="img/lenovo_ideapad_s145.jpg" alt="">
+      <img class="card-img-top img-fluid" src="img/lenovo_ideapad_s145_900x350.jpg" alt="">
       <div class="card-body">
         <h3 class="card-title">Notebook Lenovo IdeaPad S145</h3>
         <h4>$42.000</h4>
@@ -92,7 +92,7 @@
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
+          Combos Disponibles
         </button>
       </h2>
     </div>
