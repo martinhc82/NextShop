@@ -43,9 +43,9 @@
   <div class="col-lg-9">
 
     <div class="card mt-4">
-      <img class="card-img-top img-fluid" src="img/ofertaA-carrousel-900x350.png" alt="">
+      <img class="card-img-top img-fluid" src="img/acerGamerDeskPredator_950x600.jpg" alt="">
       <div class="card-body">
-        <h3 class="card-title">Notebook Lenovo V330 CI5 4GB 1TB 15.6</h3>
+        <h3 class="card-title">Acer Gamer Desk Predator</h3>
         <h4>$42.000</h4>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
         <span class="text-warning">&#9733; &#9733; &#9733; &#9734; &#9734;</span>
@@ -68,7 +68,7 @@
         <!-- Tech Specs -->
 
           <?php
-          require_once("techSpecs-leno-330.php");
+          require_once("techSpecs-acerGamDeskPred.php");
            ?>
 
       </div>
@@ -78,7 +78,7 @@
     <div class="card-header" id="headingTwo">
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
+          Productos Relacionados
         </button>
       </h2>
     </div>

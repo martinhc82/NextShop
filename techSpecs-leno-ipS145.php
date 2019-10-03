@@ -5,7 +5,7 @@
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center">
     Modelo
-    <span class="">V330 CI5</span>
+    <span class="">IdeaPad S145</span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center">
     Garantía
