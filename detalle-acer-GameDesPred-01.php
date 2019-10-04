@@ -92,7 +92,7 @@
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
+          ARMA TU PC
         </button>
       </h2>
     </div>
