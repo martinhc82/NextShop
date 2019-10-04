@@ -22,20 +22,20 @@
           Productos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Microprocesadores</a>
-          <a class="dropdown-item" href="#">Motherboards</a>
-          <a class="dropdown-item" href="#">Memorias RAM</a>
-          <a class="dropdown-item" href="#">Almacenamiento</a>
-          <a class="dropdown-item" href="#">Gabinetes</a>
-          <a class="dropdown-item" href="#">Fuentes</a>
-          <a class="dropdown-item" href="#">Refrigeración</a>
-          <a class="dropdown-item" href="#">Placas de Video</a>
-          <a class="dropdown-item" href="#">Periféricos</a>
-          <a class="dropdown-item" href="#">Monitores</a>
-          <a class="dropdown-item" href="#">Audio</a>
+          <a class="dropdown-item" href="prod-micros.php">Microprocesadores</a>
+          <a class="dropdown-item" href="prod-motherboards">Motherboards</a>
+          <a class="dropdown-item" href="prod-ram.php">Memorias RAM</a>
+          <a class="dropdown-item" href="prod-hdd-ssd.php">Almacenamiento</a>
+          <a class="dropdown-item" href="prod-housing.php">Gabinetes</a>
+          <a class="dropdown-item" href="prod-power.php">Fuentes</a>
+          <a class="dropdown-item" href="prod-cooler.php">Refrigeración</a>
+          <a class="dropdown-item" href="prod-graphics.php">Placas de Video</a>
+          <a class="dropdown-item" href="prod-peri.php">Periféricos</a>
+          <a class="dropdown-item" href="prod-display.php">Monitores</a>
+          <a class="dropdown-item" href="prod-audio.php">Audio</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="prod-notebooks.php">Notebooks</a>
-          <a class="dropdown-item" href="#">CPUs Armadas</a>
+          <a class="dropdown-item" href="prod-cpus.php">Equipos Armados</a>
         </div>
       </li>
       <form class="form-inline my-2 my-lg-0">
@@ -43,7 +43,7 @@
         <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </ul>
-    
+
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="faq.php">Centro de Ayuda</a>
