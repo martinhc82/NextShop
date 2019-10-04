@@ -30,10 +30,17 @@
 
     <div class="row">
 
+      <div class="col-lg-3">
 
-      <!-- /.col-lg-3 -->
+            <!-- Barra de Navegación Izquierda-->
 
-      <div class="col-lg-12">
+            <?php
+              require_once("navbarIzq-index.php");
+            ?>
+
+      </div>
+
+      <div class="col-lg-9">
 
         <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -43,10 +50,10 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img class="d-block img-fluid w-100" src="img/lenovo_ideapad_s145_900x350.jpg" alt="First slide">
+              <img class="d-block img-fluid w-100" src="img/acerGamerDeskPredator_950x600.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class=" d-block w-100 img-fluid" src="img/acerGamerDeskPredator_950x600.jpg" alt="Second slide">
+              <img class=" d-block w-100 img-fluid" src="img/lenovo_ideapad_s145_900x350.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
               <img class="d-block img-fluid w-100" src="img/amd_razen_5_900x350.jpg" alt="Third slide">
