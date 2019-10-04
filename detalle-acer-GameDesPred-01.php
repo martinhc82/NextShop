@@ -30,12 +30,12 @@
 
   <div class="col-lg-3">
 
-        <h4 class="my-4">Notebooks | Lenovo</h4>
+        <h4 class="my-4">Equipos Armados | ACER</h4>
 
         <!-- Barra de Navegación Izquierda-->
 
         <?php
-          require_once("navbarIzq-note.php");
+          require_once("navbarIzq-cpus.php");
         ?>
 
   </div>
@@ -46,7 +46,7 @@
       <img class="card-img-top img-fluid" src="img/acerGamerDeskPredator_950x600.jpg" alt="">
       <div class="card-body">
         <h3 class="card-title">Acer Gamer Desk Predator</h3>
-        <h4>$42.000</h4>
+        <h4>$85.000</h4>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
         <span class="text-warning">&#9733; &#9733; &#9733; &#9734; &#9734;</span>
         3 estrellas
