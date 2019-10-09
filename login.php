@@ -93,11 +93,9 @@
       </div>
       <div class="card-body">
 
-        <?php
+      <!--  <?php
             var_dump($_POST);
-            echo $errorEmail;
-            echo '<br>' . $errorPassword;
-        ?>
+        ?> -->
 
         <div class="form-login">
 
@@ -109,7 +107,7 @@
             <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu email con otros.</small>
           </div>
           <div class="form-group">
-            <label for="password">Contraseña</label>
+            <label for="password">Contraseña</label> <?php echo "| " .$errorPassword; ?>
             <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" name="password">
           </div>
           <div class="form-group form-check">
