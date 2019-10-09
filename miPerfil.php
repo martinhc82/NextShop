@@ -87,7 +87,7 @@
 
     <div class="card card-outline-secondary my-4">
       <div class="card-header">
-        ¡Bienvenido a nextShop!
+        ¡Bienvenido a nextShop <?php echo $_SESSION['email'] ?>!
       </div>
       <div class="card-body">
 
