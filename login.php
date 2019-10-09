@@ -64,7 +64,7 @@
 
 <body>
 
-  <div class="container bg-light ">
+  <div class="container bg-light">
     <!-- Barra de Navegación -->
 
       <?php
