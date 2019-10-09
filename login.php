@@ -1,8 +1,10 @@
 <?php
     require_once('functions/autoload.php');
+
     $errorEmail = '';
     $errorPassword = '';
     $email = '';
+
     if ($_POST) {
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -15,24 +17,24 @@
             $errorPassword = 'Por favor, ingresa tu contraseña';
         }
         if (empty($errorEmail) && empty($errorPassword)) {
-            //levanto mi archivo en formato json
+        // Tomo archivo en formato json usuarios.jason
             $archivo = file_get_contents('usuarios.json');
-            //lo transformo a variables en php
+        // Convierto el contenido a variables en php
             $usuarios = json_decode($archivo, true);
-            //recorro al array de usuarios
+        // Recorro al array que resulta de convertir el archivo usuarios.jason
             foreach ($usuarios as $usuario) {
                 if ($usuario['email'] == $email && password_verify($password, $usuario['password'])) {
-                    //aqui encontré al usuario y lo logueo
+        // Encuentro al usuario y lo logueo
                     $_SESSION['email'] = $usuario['email'];
                     $_SESSION['avatar'] = $usuario['avatar'];
                     $_SESSION['admin'] = $usuario['admin'];
                     $_SESSION['id'] = $usuario['id'];
-                    //pregunto si envie el mantenerme logeado
+        // Pregunto si envié el mantenerme logeado
                     if(isset($_POST['mantenerme'])) {
-                        //creo una cookie que va a durar 30 dias
+        // Creo una cookie -con nombre email- que va a durar 30 días
                         setcookie('email', $email, time() + 60*60*24*30);
                     }
-                    //luego lo redirijo a miPerfil
+        // Redirijo al usuario a la página miPerfil
                     header('location:miPerfil.php');
                 }
             }
