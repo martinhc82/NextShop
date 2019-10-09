@@ -1,3 +1,10 @@
+<!-- Modal Form Login-->
+
+  <?php
+  require_once("modalFormLogin.php");
+  require_once("modalFormRegister.php")
+   ?>
+
 <nav class="navbar navbarLogo navbar-expand-lg navbar-light bg-light sticky-top">
   <a class="navbar-brand" href="index.php"><img class=""src="img/logo-nextShop.svg"  width="175" alt="nextShop"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +61,7 @@
         <a class="nav-link" href="carrito.php"><i class="fas fa-shopping-cart"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="login.php"><i class="fas fa-user"></i></a>
+        <a class="nav-link" data-toggle="modal" data-target="#formLoginPrueba"><i class="fas fa-user"></i></a>
       </li>
       <li class="nav-item">
         <a href="#" class="nav-link"><i class="fab fa-facebook-square"></i></a>

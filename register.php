@@ -1,53 +1,149 @@
-<?PHP
-
+<?php
+    require_once('functions/autoload.php');
+    // var_dump($_POST);
+    // var_dump($_FILES);
+    if ($_POST) {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $nombreArchivo = '';
+        //me faltan las validaciones de formato email, email no repetido, password no vacio y password igual a confirmar password
+        //si subio un archivo lo guardo en la carpeta avatars
+        //pregunto si se subio el archivo exitosamente
+        if ($_FILES['avatar']['error'] === 0) {
+            //pido la extension del archivo
+            $ext = pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
+            if ($ext != 'png' && $ext != 'jpg' && $ext != 'jpeg') {
+                $errorAvatar = 'El archivo tiene un formato inválido';
+            } else {
+                $nombreArchivo = $email . '.' . $ext;
+                //voy a mover el archivo del temporal a mi carpeta avatars
+                move_uploaded_file(s['avatar']['tmp_name'], 'avatars/' . $nombreArchivo);
+            }
+        }
+        //levanto mi archivo en formato json
+        $archivo = file_get_contents('usuarios.json');
+        //lo transformo a variables en php
+        $usuarios = json_decode($archivo, true);
+        $id = 0;
+        foreach ($usuarios as $usuario) {
+            if ($usuario['id'] > $id) {
+                $id = $usuario['id'];
+            }
+        }
+        $id++;
+        //formar los datos del usuario
+        $usuario = [
+            'email' => $email,
+            'password' => password_hash($password, PASSWORD_DEFAULT),
+            'avatar' => $nombreArchivo,
+            'admin' => false,
+            'id' => $id,
+        ];
+        //agrego el usuario nuevo al array del json
+        $usuarios[] = $usuario;
+        //convierto ese usuario en JSON para luego mandarlo a guardar
+        $usuariosEnJson = json_encode($usuarios);
+        //guardo el usuario en mi json
+        file_put_contents('usuarios.json', $usuariosEnJson);
+        header('location:login.php');
+    }
 ?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <title>Contact us</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>nextShop</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="fontawesome/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+<link href="css/shop-homepage.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-    <div id='fg_membersite'>
-        <form id='register' action='' method='post'>
-            <fieldset >
-                <legend>Registrate</legend>
+  <div class="container bg-light ">
+    <!-- Barra de Navegación -->
 
-                <input type='hidden' name='submitted' id='submitted' value='1'/>
+      <?php
+      require_once("navbar.php");
+       ?>
 
-                <div class='short_explanation'>* campos requeridos</div>
-                <input type='text' class='spmhidip' name='' />
+  <div class="row">
 
-                <div><span class='error'></span></div>
-                <div class='container'>
-                    <label for='name' >Nombre completo: </label><br/>
-                    <input type='text' name='name' id='name' value='' maxlength="50" /><br/>
-                    <span id='register_name_errorloc' class='error'></span>
-                </div>
-                <div class='container'>
-                    <label for='email' >Email:</label><br/>
-                    <input type='text' name='email' id='email' value='' maxlength="50" /><br/>
-                    <span id='register_email_errorloc' class='error'></span>
-                </div>
-                <div class='container'>
-                    <label for='username' >Nombre de usuario*:</label><br/>
-                    <input type='text' name='username' id='username' value='' maxlength="50" /><br/>
-                    <span id='register_username_errorloc' class='error'></span>
-                </div>
-                <div class='container' style='height:80px;'>
-                    <label for='password' >Contaseña*:</label><br/>
-                    <div class='pwdwidgetdiv' id='thepwddiv' ></div>
-                    <input type='password' name='password' id='password' maxlength="50" />
-                    <div id='register_password_errorloc' class='error' style='clear:both'></div>
-                </div>
+  <div class="col-lg-3">
 
-                <div class='container'>
-                    <input type='submit' name='Submit' value='Enviar' />
-                </div>
+        <h4 class="my-4">Unite a nextShop</h4>
 
-            </fieldset>
-        </form>
+        <!-- Barra de Navegación Izquierda-->
 
-    </body>
+        <?php
+          require_once("navbarIzq-advise.php");
+        ?>
+
+  </div>
+
+  <div class="col-lg-9">
+
+    <div class="card card-outline-secondary my-4">
+      <div class="card-header">
+        Completá este formulario para registrarte en nuestro sitio | Si estás registrado ingresá <a href="login.php">aquí</a>
+      </div>
+      <div class="card-body">
+        <div class="form-login">
+
+            <form method="post" action="" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico" name="email"
+                value="<?php ?>">
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" name="password">
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Confirme su contraseña" name="confirm-password">
+              </div>
+              <div class="form-group">
+                <label for="avatar">Subir Avatar</label>
+                <input type="file"  id="avatar" name="avatar">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="terminos" name="terminos">
+                <label class="form-check-label" for="terminos">Acepto los Términos y Condiciones</label>
+              </div>
+              <button type="submit" class="btn btn-secondary">Registrarse</button>
+            </form>
+		</div>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+        <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+      </div>
+    </div>
+    <!-- /.card -->
+
+  </div>
+  <!-- /.col-lg-9 -->
+
+</div>
+<!-- /.row -->
+
+</div>
+<!-- Footer -->
+
+  <?php
+  require_once("footer.php");
+   ?>
+</body>
+
 </html>
