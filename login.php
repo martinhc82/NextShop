@@ -89,7 +89,7 @@
 
     <div class="card card-outline-secondary my-4">
       <div class="card-header">
-        Ingresa a nextShop | Si no tenés una cuenta registrate <a href="register.php">aquí</a>
+        Ingresá a nextShop | Si no tenés una cuenta registrate <a href="register.php">aquí</a>
       </div>
       <div class="card-body">
 
