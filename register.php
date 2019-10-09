@@ -17,7 +17,7 @@
             } else {
                 $nombreArchivo = $email . '.' . $ext;
                 //voy a mover el archivo del temporal a mi carpeta avatars
-                move_uploaded_file(s['avatar']['tmp_name'], 'avatars/' . $nombreArchivo);
+                move_uploaded_file($_FILES['avatar']['tmp_name'], 'avatars/' . $nombreArchivo);
             }
         }
         //levanto mi archivo en formato json
