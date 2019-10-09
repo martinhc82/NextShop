@@ -1,24 +1,15 @@
 <?php
     require_once('functions/autoload.php');
-
-    $errorEmail = '';
-    $errorPassword = '';
-    $email = '';
-
+    // var_dump($_POST);
+    // var_dump($_FILES);
     if ($_POST) {
+
         $email = $_POST['email'];
         $password = $_POST['password'];
         $nombreArchivo = '';
-
-        if ($email == '') {
-            $errorEmail = 'Por favor, ingresá tu correo electrónico';
-        } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errorEmail = 'El correo electrónico no es válido';
-        }
-        if ($password == '') {
-            $errorPassword = 'Por favor, ingresa tu contraseña';
-        }
-
+        //me faltan las validaciones de formato email, email no repetido, password no vacio y password igual a confirmar password
+        //si subio un archivo lo guardo en la carpeta avatars
+        //pregunto si se subio el archivo exitosamente
         if ($_FILES['avatar']['error'] === 0) {
             //pido la extension del archivo
             $ext = pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
@@ -55,7 +46,7 @@
         $usuariosEnJson = json_encode($usuarios);
         //guardo el usuario en mi json
         file_put_contents('usuarios.json', $usuariosEnJson);
-        header('location:index.php');
+       header('location:login.php');
     }
 ?>
 
@@ -112,7 +103,7 @@
 
             <form method="post" action="" enctype="multipart/form-data">
               <div class="form-group">
-                <label for="email">Correo electrónico</label> <?php echo "| " .$errorEmail; ?>
+                <label for="email">Correo electrónico</label>
                 <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico" name="email"
                 value="<?php ?>">
               </div>
