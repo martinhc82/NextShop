@@ -13,13 +13,7 @@ class Usuario {
     $this->setPass($passUser);
   }
 
-  private function encriptarPass(string $password): string
-  {
-    return password_hash($password, PASSWORD_DEFAULT);
-  }
-
-
-  public function setName(string $name)
+    public function setName(string $name)
   {
     $this->name = $name;
   }
@@ -49,7 +43,10 @@ class Usuario {
     return $this->password;
   }
 
-
+  private function encriptarPass(string $password): string
+  {
+    return password_hash($password, PASSWORD_DEFAULT);
+  }
 
 
 

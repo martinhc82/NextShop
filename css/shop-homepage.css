@@ -4,7 +4,7 @@ body {
   margin: 0px;
   font-family: 'Roboto', sans-serif !important;
   background-color: #F8F9FA;
-  }
+}
 
 
 .navbarIzq {
@@ -31,19 +31,36 @@ body {
      color: #CCCCCC;
  }
 
-.navbarLogo{
-  padding-right: 0px;
-  padding-left: 0px;
+.container-navbar{
+padding: 0px;
+margin: 0px;
+
 }
 
-.navbarIconosLeft{
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  float: left;
+.navbarLogo{
   padding-right: 15px;
   padding-left: 15px;
 }
+
+.navbarIconosRight{
+  display: flex;
+  flex-direction: row;
+/*  justify-content: left;
+  float: left; */
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow: hidden;
+}
+.navbarIconosList{
+  flex-direction: row;
+  float: left;
+  width: 50%;
+}
+
+.navbarIconosItem{
+width: 100%;
+}
+
 
 p.modalTile{
   font-size: 20px;

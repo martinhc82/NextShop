@@ -19,24 +19,25 @@
 
 <body>
 
+  <!-- Barra de Navegación -->
+
+  <?php
+  require_once("header.php");
+  ?>
+
   <!-- Contenido -->
   <div class="container">
 
-    <!-- Barra de Navegación -->
-
-      <?php
-      require_once("navbar.php");
-       ?>
 
     <div class="row">
 
       <div class="col-lg-3">
 
-            <!-- Barra de Navegación Izquierda-->
+        <!-- Barra de Navegación Izquierda-->
 
-            <?php
-              require_once("navbarIzq-index-3.php");
-            ?>
+        <?php
+        require_once("navbarIzq-index-3.php");
+        ?>
 
       </div>
 
@@ -132,9 +133,9 @@
 
   <!-- Footer -->
 
-    <?php
-    require_once("footer.php");
-     ?>
+  <?php
+  require_once("footer.php");
+  ?>
 </body>
 
 </html>

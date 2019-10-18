@@ -10,24 +10,24 @@
 
   <title>nextShop</title>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="fontawesome/css/all.css">
-<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
-<link href="css/shop-homepage.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+  <link href="css/shop-homepage.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <!-- Page Content -->
-  <div class="container bg-light">
-
   <!-- Barra de Navegación -->
 
-      <?php
-      require_once("navbar.php");
-       ?>
+  <?php
+  require_once("header.php");
+  ?>
 
+  <!-- Contenido -->
+  
+  <div class="container bg-light">
 
     <div class="row">
 
@@ -36,9 +36,9 @@
         <h4 class="my-4">Microprocesadores</h4>
         <!-- Barra de Navegación Izquierda-->
 
-          <?php
-          require_once("navbarIzq-micros.php");
-           ?>
+        <?php
+        require_once("navbarIzq-micros.php");
+        ?>
 
 
       </div>
@@ -186,9 +186,9 @@
 
   <!-- Footer -->
 
-    <?php
-    require_once("footer.php");
-     ?>
+  <?php
+  require_once("footer.php");
+  ?>
 
 </body>
 

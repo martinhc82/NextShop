@@ -47,22 +47,22 @@
     </ul>
 
     <!-- Menú íconos -->
-    <div class="row navbarIconosLeft">
+  <div class="row navbarIconosRight">
 
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+    <ul class="">
+      <li class="">
         <a class="nav-link" href="carrito.php"><i class="fas fa-shopping-cart"></i></a>
       </li>
-      <li class="nav-item">
+      <li class="">
         <a class="nav-link" href="login.php"><i class="fas fa-user"></i></a>
       </li>
-      <li class="nav-item">
+      <li class="">
         <a href="#" class="nav-link"><i class="fab fa-facebook-square"></i></a>
       </li>
-      <li class="nav-item">
+      <li class="">
         <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
       </li>
-      <li class="nav-item">
+      <li class="">
         <a href="#" class="nav-link"><i class="fab fa-twitter-square"></i></a>
       </li>
     </ul>

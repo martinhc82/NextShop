@@ -19,17 +19,16 @@
 
 <body>
 
-  <!-- Contenido -->
+<!-- Barra de Navegación -->
+
+  <?php
+  require_once("header.php");
+  ?>
+  
+<!-- Contenido -->
   <div class="container">
 
-    <!-- Barra de Navegación -->
-
-      <?php
-      require_once("navbar.php");
-       ?>
-
     <div class="row">
-
 
       <!-- /.col-lg-3 -->
 
@@ -125,9 +124,9 @@
 
   <!-- Footer -->
 
-    <?php
-    require_once("footer.php");
-     ?>
+  <?php
+  require_once("footer.php");
+  ?>
 </body>
 
 </html>
