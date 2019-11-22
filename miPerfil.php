@@ -93,7 +93,9 @@ if ($_POST) {
             ¡Bienvenido a nextShop <?php echo $_SESSION['email'] ?>!
           </div>
           <div class="card-body">
-
+<div >
+  <a href="logout.php">Cerrar Sesion</a>
+</div>
 
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
