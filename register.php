@@ -122,6 +122,10 @@ if ($_POST) {
                   <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" name="password">
                 </div>
                 <div class="form-group">
+                  <label for="usuario">Nombre de usuario</label>
+                  <input type="usuario" class="form-control" id="usuario" placeholder="Ingrese su nombre de usuario" name="usuario">
+                </div>
+                <div class="form-group">
                   <label for="confirm-password">Confirmar Contraseña</label>
                   <input type="password" class="form-control" id="confirm-password" placeholder="Confirme su contraseña" name="confirm-password">
                 </div>
