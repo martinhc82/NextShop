@@ -1,21 +1,97 @@
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-  <div class="container">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
 
-    <ul class="text-white navbar-nav mr-auto">
-      <li> <a class="m-0 text-white" href="faq.php">Centro de Ayuda</a></li>
-      <li><a class="m-0 text-white" href="contacto.php">Contacto</a></li>
-      <li class="nav-item">
-        <a href="#" class="m-0 text-center text-white"><i class="fab fa-facebook-square"></i></a>
-        <a href="#" class="m-0 text-center text-white"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="m-0 text-center text-white"><i class="fab fa-twitter-square"></i></a>
-      </li>
-      <li><p class="m-0">Copyright &copy; nextShop S.R.L. 2019</p></li>
-    </ul>
+    <link rel="stylesheet" href="css/estilos.css">
 
-   </div>
-  <!-- /.container -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>FOOTER DESIGN</title>
+  </head>
+  <body>
+
+  </body>
+
+<footer>
+
+  <div class="container-footer-all">
+
+<div class="container-body">
+
+  <div class="colum1">
+    <h1>MAS INFORMACION</h1>
+    <p>SOMOS UNA EMPRESA DEDICADA A LA VENTA DE PRODUCTOS DE COMPUTACION</p>
+
+  </div>
+
+  <div class="colum2">
+    <h1>REDES SOCIALES</h1>
+    <div class="row">
+      <img src="css/icon/facebook.png" >
+      <label>SEGUINOS EN FACEBOOK</label>
+    </div>
+      <div class="row">
+        <img src="css/icon/instagram.png" >
+        <label>SEGUINOS EN INSTAGRAM</label>
+      </div>
+        <div class="row">
+          <img src="css/icon/twitter.png" >
+          <label>SEGUINOS EN TWITTER</label>
+        </div>
+
+  </div>
+<div class="colum3">
+  <h1>INFORMACION DE CONTACTO</h1>
+  <div class="row2">
+    <img src="css/icon/house.png">
+    <label>Av.Cabildo 3472 Capital federal  Buenos Aires. </label>
+    </div>
+    <div class="row2">
+      <img src="css/icon/telefono.png">
+      <label> 0810-333-4332 </label>
+      </div>
+      <div class="row2">
+        <img src="css/icon/contacto.png">
+        <label> <a href="#">contacto@nextshop.com.ar </a></label>
+        </div>
+
+</div>
+</div>
+
+
+
+</div>
+<br>
+
+<div class="container-footer">
+  <div class="footer">
+
+
+  <div class="copyright">
+    Copyright © 2019 Next-Shop
+    El uso de este sitio web implica la aceptación
+    de los Términos y Condiciones <br>
+    y de las Políticas de Privacidad de Next-Shop.
+
+  </div>
+  <div class="informacion">
+  <a href="">Informacion Compañia </a>  -  <a href="">Terminos y Condiciones</a>
+</div>
+</div>
+</div>
 </footer>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
 
 <!-- Bootstrap core JavaScript -->
 <!-- <script src="vendor/jquery/jquery.min.js"></script>
